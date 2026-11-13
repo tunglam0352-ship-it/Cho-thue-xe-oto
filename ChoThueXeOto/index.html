@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaNu Auto - Quản lý cho thuê xe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>🚗 LaNu Auto</h2>
+    <p class="subtitle">HỆ THỐNG QUẢN LÝ</p>
+
+    <button class="nav active" data-page="dashboard">Tổng quan</button>
+    <button class="nav" data-page="cars">Quản lý xe</button>
+    <button class="nav" data-page="customers">Khách hàng</button>
+    <button class="nav" data-page="bookings">Đặt xe & hợp đồng</button>
+    <button class="nav" data-page="payments">Thanh toán</button>
+    <button class="nav" data-page="gps">Giám sát GPS</button>
+    <button class="nav" data-page="risks">Báo cáo rủi ro</button>
+    <button class="nav" data-page="reports">Báo cáo thống kê</button>
+
+    <div class="sidebar-bottom">LaNu Auto © 2026</div>
+</div>
+
+<main class="main">
+    <header>
+        <div>
+            <h1 id="page-title">Tổng quan</h1>
+            <p>Chào mừng đến với hệ thống LaNu Auto</p>
+        </div>
+        <div class="admin">👤 Quản trị viên</div>
+    </header>
+
+    <section id="content"></section>
+</main>
+
+<!-- Hộp thoại thêm dữ liệu -->
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h2 id="modal-title">Thêm dữ liệu</h2>
+            <button class="close" onclick="closeModal()">✕</button>
+        </div>
+        <form id="data-form">
+            <div id="form-fields"></div>
+            <button class="primary full" type="submit">Lưu thông tin</button>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
